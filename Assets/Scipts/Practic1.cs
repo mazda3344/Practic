@@ -14,14 +14,15 @@ public class Practic1 : MonoBehaviour
     }
     private int SumEvenNumbersInRange(int min, int max)
     {
+        int total = 0;
         for(int i = min; i <= max; i++)
         {
             if(i % 2 == 0)
             {
-                
+                total = total + i;
                 Debug.Log(i);
             }
         }
-        return 0;
+        return total;
     }
 }
