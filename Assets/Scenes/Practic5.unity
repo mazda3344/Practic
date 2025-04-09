@@ -445,13 +445,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 651728150}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 651728159}
+        m_TargetAssemblyTypeName: SelectionOfSort, Assembly-CSharp
+        m_MethodName: OnSelectionSort
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -509,8 +509,7 @@ GameObject:
   - component: {fileID: 651728151}
   - component: {fileID: 651728158}
   - component: {fileID: 651728157}
-  - component: {fileID: 651728156}
-  - component: {fileID: 651728155}
+  - component: {fileID: 651728159}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -587,30 +586,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &651728155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651728150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d4d012181b00b2c45b9c1dd83805591d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &651728156
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 651728150}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddfec74eabe28924c92dbb988fae846e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &651728157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -633,6 +608,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3c1d8cd996b9ada49909854c86ce2470, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &651728159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 651728150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddfec74eabe28924c92dbb988fae846e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &996491002
