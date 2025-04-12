@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-public class Practic1 : MonoBehaviour
+public class Practic1: MonoBehaviour
 {
     public void OnSumEvenNumbersInRange()
     {
