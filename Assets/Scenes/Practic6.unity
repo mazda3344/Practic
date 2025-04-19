@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 89818093}
   - component: {fileID: 89818092}
   m_Layer: 5
-  m_Name: PinText
+  m_Name: PinText2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -437,7 +437,7 @@ GameObject:
   - component: {fileID: 136554831}
   - component: {fileID: 136554830}
   m_Layer: 5
-  m_Name: PinText
+  m_Name: PinText3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -822,7 +822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &702178432
 RectTransform:
   m_ObjectHideFlags: 0
@@ -841,7 +841,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.5643e-10}
+  m_AnchoredPosition: {x: 25, y: 128}
   m_SizeDelta: {x: 1067.4087, y: 490.8453}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &702178433
@@ -1320,6 +1320,7 @@ GameObject:
   m_Component:
   - component: {fileID: 953251250}
   - component: {fileID: 953251251}
+  - component: {fileID: 953251252}
   m_Layer: 0
   m_Name: TimeHandler
   m_TagString: Untagged
@@ -1335,13 +1336,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 953251249}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 990.45557, y: 599.7031, z: -7.2840395}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.72514635, z: -0, w: 0.6885949}
+  m_LocalPosition: {x: 1088, y: 481, z: 482}
+  m_LocalScale: {x: 19.407005, y: 18.921831, z: 18.921247}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 92.962, z: 0}
 --- !u!114 &953251251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1351,11 +1352,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 953251249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a18de24108ad4f4e9539747cf14d00c, type: 3}
+  m_Script: {fileID: 11500000, guid: 79b4dd96a9922d742bb10687fb17d71f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TimerText: {fileID: 2119613445}
   countdown: 60
+  timerText: {fileID: 2119613445}
+  image: {fileID: 702178433}
+--- !u!114 &953251252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953251249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c233a8c8e3f49b841ac7bad96b2ac0a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PinText1: {fileID: 0}
+  PinText2: {fileID: 0}
+  PinText3: {fileID: 0}
+  pin1: 1
+  pin2: 1
+  pin3: 1
 --- !u!1 &993505368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1438,7 +1458,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 993505371}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 953251249}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &993505371
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1902,7 +1934,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 1.5643e-10}
+  m_AnchoredPosition: {x: 1254, y: 824}
   m_SizeDelta: {x: 1067.4087, y: 490.8453}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273977673
@@ -2825,7 +2857,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -7, y: -3}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2053004224
@@ -3088,7 +3120,7 @@ GameObject:
   - component: {fileID: 2144581981}
   - component: {fileID: 2144581980}
   m_Layer: 5
-  m_Name: 'PinText '
+  m_Name: PinText 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

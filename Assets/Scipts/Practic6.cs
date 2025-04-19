@@ -5,20 +5,40 @@ using TMPro;
 using System;
 public class Practic6 : MonoBehaviour
 {
-    public TMP_Text TimerText;
-    private float currentTime;
     public float countdown = 60f;
+    private float currentTime;
+    public TMP_Text timerText;
+    public Image image;
+    private bool StopTime = false;
+
     void Start()
     {
-        currentTime = countdown;
+        image.gameObject.SetActive(false);
+        currentTime = countdown; 
+        UpdateTimerText();
+        StopTime = true;
     }
+
     void Update()
     {
-        currentTime -= Time.deltaTime;
-        TimerText.text = currentTime.ToString();
-        if (currentTime <= 0) 
+        if (StopTime)
         {
-            currentTime = countdown;
+            currentTime -= Time.deltaTime;
+
+            if (currentTime <= 0)
+            {
+                currentTime = 0;
+                StopTime = false;
+                Debug.Log("ТЫ ПРОИГРАЛ");
+                image.gameObject.SetActive(true);
+            }
+
+            UpdateTimerText();
         }
+    }
+
+    private void UpdateTimerText()
+    {
+        timerText.text = currentTime.ToString("F1");
     }
 }
