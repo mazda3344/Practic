@@ -1233,7 +1233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "-1 | 2 |-1\n\u043C\u043E\u043B\u043E\u0442\u043E\u043A"
+  m_text: "-1 |+ 2 |-1\n\u043C\u043E\u043B\u043E\u0442\u043E\u043A"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1320,7 +1320,6 @@ GameObject:
   m_Component:
   - component: {fileID: 953251250}
   - component: {fileID: 953251251}
-  - component: {fileID: 953251252}
   m_Layer: 0
   m_Name: TimeHandler
   m_TagString: Untagged
@@ -1352,27 +1351,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 953251249}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b4dd96a9922d742bb10687fb17d71f, type: 3}
+  m_Script: {fileID: 11500000, guid: 4ef6f19f7af461944bb41aaa51c6e501, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdown: 60
+  button1: {fileID: 993505370}
+  button2: {fileID: 1741314694}
+  button3: {fileID: 1416994411}
+  button4: {fileID: 1794265673}
+  button5: {fileID: 1086124551}
+  pin1: 1
+  pin2: 1
+  pin3: 1
+  pin_1text: {fileID: 2144581980}
+  pin_2text: {fileID: 89818092}
+  pin_3text: {fileID: 136554830}
+  countdown: 5
   timerText: {fileID: 2119613445}
   image: {fileID: 702178433}
---- !u!114 &953251252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 953251249}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 46c68c08cfe7dbd4fb05bc2612f33d81, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Text1: {fileID: 0}
-  Text2: {fileID: 0}
-  Text3: {fileID: 0}
+  imageh: {fileID: 1273977673}
 --- !u!1 &993505368
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,7 +1908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1273977672
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1931,7 +1927,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 927, y: 919}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1067.4087, y: 490.8453}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1273977673
