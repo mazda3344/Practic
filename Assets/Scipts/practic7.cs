@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class practic7 : MonoBehaviour
 {
     public float MaxTime;
-    private Image img;
+    public Image img1;
     private float currentTime;
+    public bool Tick;
+
 
     void Start()
     {
-        img = GetComponent<Image>();
+        
         currentTime = MaxTime;
     }
 
@@ -20,8 +22,10 @@ public class practic7 : MonoBehaviour
         currentTime -= Time.deltaTime;
 
         if (currentTime <= 0)
+        {
+            Tick = true;
             currentTime = MaxTime;
-        
-        img.fillAmount = currentTime / MaxTime;
+        }
+        img1.fillAmount = currentTime / MaxTime;
     }
 }

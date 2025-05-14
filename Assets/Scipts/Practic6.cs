@@ -3,6 +3,9 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine.UI;
 using System;
+using UnityEngine.Timeline;
+using System.Drawing;
+using UnityEditor;
 public class Practic6Pin : MonoBehaviour
 {
     public Button button1;
@@ -22,6 +25,9 @@ public class Practic6Pin : MonoBehaviour
     public Image imageh;
     public Button buttonWin;
     public Button ButtonDontWin;
+    public AudioSource audio;
+    public AudioClip clip1;
+    public AudioClip clip2;
 
     void Start()
     {
@@ -35,7 +41,16 @@ public class Practic6Pin : MonoBehaviour
         currentTime = countdown; 
         UpdateTimerText();
         StopTime = true;
+        audio.Play();
     }
+    public void changeSound()
+        {
+            if(audio.isPlaying)
+              audio.Pause();
+                else
+                audio.Play();
+            
+        }
     void OnButtonClick1()
     {
         pin1 += 1;
@@ -74,6 +89,7 @@ public class Practic6Pin : MonoBehaviour
         imageh.gameObject.SetActive(false);
         currentTime = 60f;
         StopTime = true;
+        audio.Play();
     }
     void OnButtonClick5()
     {
@@ -86,6 +102,7 @@ public class Practic6Pin : MonoBehaviour
         imageh.gameObject.SetActive(false);
         currentTime = 60f;
         StopTime = true;
+        audio.Play();
     }
     void Update()
     {
@@ -98,24 +115,28 @@ public class Practic6Pin : MonoBehaviour
                 StopTime = false;
                 Debug.Log("ТЫ ПРОИГРАЛ");
                 image.gameObject.SetActive(true);
+                
             }
             if (pin1 == 7 && pin2 == 7 && pin3 == 7)
             {
                 StopTime = false;
                 Debug.Log("ТЫ ПОБЕДИЛ");
                 imageh.gameObject.SetActive(true);
+                
             }
             if (pin1 >= 20 || pin2 >= 20 || pin3 >= 20)
             {
                 StopTime = false;
                 Debug.Log("ТЫ ПРОИГРАЛ");
                 image.gameObject.SetActive(true);
+                
             }
             if (pin1 <= -20 || pin2 <= -20 || pin3 <= -20)
             {
                 StopTime = false;
                 Debug.Log("ТЫ ПРОИГРАЛ");
                 image.gameObject.SetActive(true);
+                
             }
             UpdateTimerText();
         
