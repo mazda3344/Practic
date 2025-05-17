@@ -115,6 +115,7 @@ public class Practic6Pin : MonoBehaviour
                 StopTime = false;
                 Debug.Log("ТЫ ПРОИГРАЛ");
                 image.gameObject.SetActive(true);
+                audio.Stop();
                 
             }
             if (pin1 == 7 && pin2 == 7 && pin3 == 7)
@@ -122,21 +123,21 @@ public class Practic6Pin : MonoBehaviour
                 StopTime = false;
                 Debug.Log("ТЫ ПОБЕДИЛ");
                 imageh.gameObject.SetActive(true);
-                
+                audio.Stop();
             }
             if (pin1 >= 20 || pin2 >= 20 || pin3 >= 20)
             {
                 StopTime = false;
                 Debug.Log("ТЫ ПРОИГРАЛ");
                 image.gameObject.SetActive(true);
-                
+                audio.Stop();
             }
             if (pin1 <= -20 || pin2 <= -20 || pin3 <= -20)
             {
                 StopTime = false;
                 Debug.Log("ТЫ ПРОИГРАЛ");
                 image.gameObject.SetActive(true);
-                
+                audio.Stop();
             }
             UpdateTimerText();
         
