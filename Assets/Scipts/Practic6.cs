@@ -28,6 +28,7 @@ public class Practic6Pin : MonoBehaviour
     public AudioSource audio;
     public AudioClip clip1;
     public AudioClip clip2;
+    
 
     void Start()
     {
