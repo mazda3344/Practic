@@ -37,6 +37,7 @@ public class Practic6Pin : MonoBehaviour
         button3.onClick.AddListener(OnButtonClick3);
         buttonWin.onClick.AddListener(OnButtonClick4);
         ButtonDontWin.onClick.AddListener(OnButtonClick5);
+        
         image.gameObject.SetActive(false);
         imageh.gameObject.SetActive(false);
         currentTime = countdown; 
